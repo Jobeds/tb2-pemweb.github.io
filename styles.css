@@ -318,6 +318,17 @@ footer {
     z-index: 1;
 }
 
+.service-item::after {
+    content: '';
+    position: absolute;
+    top: 0px; /* Jarak garis dari atas elemen */
+    left: 25px; /* Jarak garis dari sisi kiri elemen */
+    width: 1.5px; /* Ketebalan garis */
+    height: calc(100% - 60px); /* Tinggi garis mengikuti elemen dengan margin */
+    background-color: rgba(141, 141, 141, 0.8); /* Warna garis putih dengan sedikit transparansi */
+    z-index: 2; /* Pastikan garis berada di atas overlay */
+}
+
 .service-item p {
     position: absolute;
     bottom: 0;
